@@ -1,22 +1,31 @@
 <template>
-  <v-app id="inspire">
-    <v-app-bar app shrink-on-scroll class="red white--text">
-      <v-toolbar-title
-        >Supermercado Online
+  <v-app>
 
-        <v-btn icon>
+  <v-toolbar class="red white--text">
+    
+     <v-app-bar-nav-icon></v-app-bar-nav-icon>
+
+      <v-toolbar-title>Supermercado Online</v-toolbar-title>
+
+      <v-spacer></v-spacer>
+
+     <v-btn icon>
+            <v-icon class="white--text">mdi-magnify</v-icon>     
+      </v-btn>
+
+      <v-btn icon>
           <v-icon class="white--text">mdi-account</v-icon>
         </v-btn>
+     
 
-        <v-btn icon>
-          <v-icon class="white--text">mdi-heart</v-icon>
-        </v-btn>
-
-        <v-btn icon>
+      <v-btn icon>
+        <v-icon class="white--text">mdi-heart</v-icon>
+      </v-btn>
+         <v-btn icon>
           <v-icon class="white--text">mdi-cart</v-icon>
         </v-btn>
-      </v-toolbar-title>
-    </v-app-bar>
+  </v-toolbar>
+    
 
     <v-main>
       <v-container>
@@ -29,8 +38,10 @@
     </v-main>
   </v-app>
 </template>
+<style></style>
 
 <script>
+
 export default {
   //
 };
